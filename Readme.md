@@ -40,6 +40,70 @@ This API is designed to work with a frontend such as **React + Tailwind CSS** an
 - Visit 🔗 https://github.com/KrishnakumarModi/Sgpa-Cgpa-calculator
 
 
+## 🧮 SGPA Calculation
+
+The calculator uses the following formula:
+
+```text
+SGPA = Σ(Credit × Grade Point) / Σ(Credit)
+```
+
+### Example
+
+| Subject                 | Grade | Grade Point | Credit |
+| ----------------------- | ----- | ----------: | -----: |
+| Compiler Design         | A+    |          10 |      4 |
+| Artificial Intelligence | A     |           9 |      3 |
+| Web Technology          | B+    |           8 |      3 |
+
+Calculation:
+
+```text
+(4 × 10) + (3 × 8) + (3 × 9)
+--------------------------------
+        4 + 3 + 3
+
+= 91 / 10
+
+= 9.10
+```
+
+> **Note:** Grade points may vary depending on your university's grading system.
+
+## 🔌 API
+
+### Request Body
+
+```json
+{
+  "subjects": [
+    {
+      "grade": "A+",
+      "credit": 4
+    },
+    {
+      "grade": "A",
+      "credit": 3
+    },
+    {
+      "grade": "B+",
+      "credit": 3
+    }
+  ]
+}
+```
+
+### Example Response
+
+```json
+{
+  "total_credit": 10,
+  "total_credit_points": 81,
+  "sgpa": 8.1
+}
+```
+
+
 ## 📈 CGPA
 
 The project can calculate CGPA using semester-wise SGPA and credits.
