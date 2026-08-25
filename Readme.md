@@ -99,8 +99,8 @@ Calculation:
 ```json
 {
   "total_credit": 10,
-  "total_credit_points": 81,
-  "sgpa": 8.1
+  "total_credit_points": 91,
+  "sgpa": 9.1
 }
 ```
 ---
