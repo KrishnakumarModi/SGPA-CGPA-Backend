@@ -39,6 +39,7 @@ This API is designed to work with a frontend such as **React + Tailwind CSS** an
 
 - Visit 🔗 https://github.com/KrishnakumarModi/Sgpa-Cgpa-calculator
 
+---
 
 ## 🧮 SGPA Calculation
 
@@ -102,7 +103,7 @@ Calculation:
   "sgpa": 8.1
 }
 ```
-
+---
 
 ## 📈 CGPA
 
@@ -128,6 +129,7 @@ The exact calculation can be configured according to the grading system of the i
 * [ ] Deploy the application
 * [ ] Add dark mode
 * [ ] Improve mobile responsiveness
+---
 
 ## 👨‍💻 Author
 
