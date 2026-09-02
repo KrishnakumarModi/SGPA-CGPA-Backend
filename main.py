@@ -10,7 +10,8 @@ app=FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= os.getenv("origin"),
+    allow_origins= [os.getenv("origin"),"sgpa-cgpa-calculator-neon.vercel.app"],
+    
     allow_credentials= True,
     allow_methods= ["POST"],
     allow_headers= ["*"],
